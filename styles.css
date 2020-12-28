@@ -1,0 +1,354 @@
+body {
+    font: 15px/1.5 Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:url(50-Beautiful-and-Minimalist-Presentation-Backgrounds-01.jpg) no-repeat;
+    width: 100%;
+}
+/*navbar  */
+header h2{
+    margin: 0 auto 10px;
+    padding: 18px;
+    font-family: 'Brush Script MT', cursive;
+    color: #e91e63;
+    position: fixed;
+    text-align: left;
+}
+ul{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+ul li:last-child{
+    border-right: none;
+} 
+ul li a{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+ul li a .icon{
+width: 20px;
+height: 20px;
+text-align: center;
+background: #ccc;
+overflow: hidden;
+margin: 0 auto 10px;
+}
+ul li a .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 18px;
+    font-size: 16px;
+    transition: 0.5s;
+    color:#000 ;
+}
+ul li a .icon .fa:last-child{
+    color: #e91e63;
+}
+ul li a:hover .icon .fa{
+    transform: translateY(-100%);
+}
+ul li a .name{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+ul li a .name span{
+    display: block;
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+ul li a .name span:before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #e91e63;
+}
+ul li a:hover .name span{
+    transform: translateY(20px);
+}
+/*lobby*/
+.lobby{
+    width: 100%;
+    margin: 0%;
+    padding: 20%;
+    text-align: center;
+    color: #fff;
+    font-family: Haettenschweiler;
+    font-size: 24px;
+    line-height: 60px;
+    font-weight: lighter;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e91e6f;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+h1 span{
+    background: local;
+    padding: 0 10px;
+}
+.col-md-8 {
+    margin: 0;
+    padding: 12%;
+    color: #fff;
+
+}
+.col-md-4 {
+    margin: -24%;
+    width: 50%;
+    padding: 0%;
+    text-align: center;
+
+}
+section h2{
+    margin: 0;
+    text-align:left;
+    padding:0;
+    color: #fff;
+    line-height: 60px;
+    font-family: Courier, monospace;
+    font-size: 35px;
+    
+}
+section .col-md-8 p{
+    margin: 0;
+    text-align: justify;
+    padding: 30px;
+    color: #fff;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.col-md-6 p{
+    margin: 0;
+    text-align: justify;
+    padding: 10px;
+    color: #fff;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+#service{
+    margin: 0 0;
+    padding: 10%;
+    align-content: center;
+}
+/*Slide show*/
+.slideshow-container{
+    margin: 0;
+    padding: 0;
+}
+.mySlides{
+    position: absolute;
+    text-align: center;
+    object-fit: cover;
+    margin: 0 0;
+    padding: 85px 50px;
+    color: #fff;
+    background-color: #e91e63;
+    display: none; /*hide image by default*/
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+}
+.next{
+    right: 0;
+    border-right: 3px 0 0 3px; /*positioning next button*/
+}
+.prev:hover, .next:hover{
+    background-color: #e91e63(0, 0, 0, 0.8); /*hover*/
+}
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 40px 150px;
+    position: absolute;              /* Caption text*/
+    bottom: 8px;
+    text-align: right;
+}
+.numberText{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    position: relative;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 100px 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;  
+}
+.active, .dot:hover{
+    background-color: #e91e63;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+}
+.col-md-12 h4{
+    margin: 0;
+    padding: 16%;
+    text-align: center;
+    color: #fff;
+    line-height: 2px;
+}
+.col-md-6 h3{
+    margin: 0%;
+    padding: 1%;
+    text-align: left;
+    color: #fff;
+    font-family: 'Courier New';
+    font-size: 20px;
+    line-height: 34px;
+}
+.media ul{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%,-50%);
+}
+.media ul li{
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .5s;
+}
+.media ul li:hover{
+    color: #e91e63;
+    border: 1px solid #e91e63;
+    transition: .5s;
+}
+@media(max-width: 768px){
+    header .col-md-6{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .col-md-4{
+        width: 100%;
+        align-content: center;
+        padding-top: 10%;
+    }
+    .col-md-8{
+        line-height: 1px;
+    }
+    #services h2{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .mySlides{
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding: 30px 30px;
+        line-height: 1px;
+    }
+    .col-md-12 h4{
+        float: none;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        line-height: 20px;
+    }
+    header .col-md-6 ul{
+        display: block;
+        text-align: right;
+        padding-top: 140px;
+        margin-left: 100px;
+    }
+    
+}
